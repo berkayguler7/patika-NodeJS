@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const Init = () => {
+const init = () => {
     if(!fs.existsSync('employees.json')){
         fs.writeFileSync('employees.json', "{\"employees\": []}");
     }
@@ -54,4 +54,4 @@ const updateEmployee = (employeeName, newSalary, employeeObj) => {
     })
 }
 
-module.exports = {Init, createEmployee, deleteEmployee, readEmployee, updateEmployee, readAllEmployees}
+module.exports = {init, createEmployee, deleteEmployee, readEmployee, updateEmployee, readAllEmployees}

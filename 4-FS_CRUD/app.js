@@ -1,6 +1,6 @@
 const employee = require('./employeeModule');
 const fs = require('fs');
-employee.Init();
+employee.init();
 const getData = () => {
     return fs.readFileSync('employees.json','utf-8', (err, data) => {
         if(err) 
