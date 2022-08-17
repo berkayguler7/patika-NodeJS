@@ -22,7 +22,7 @@ router.get('/contact', ctx => {
 });
 
 router.get('/404', ctx => {
-    ctx.status = 200;
+    ctx.status = 404;
     ctx.body = "<h1>404 PAGE NOT FOUND</h1>";
 });
 
